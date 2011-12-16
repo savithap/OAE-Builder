@@ -37,7 +37,7 @@ sparse = {"path" => "#{builddir}/sparsemapcontent", "repository" => "https://git
 solr = {"path" => "#{builddir}/solr", "repository" => "https://github.com/sakaiproject/solr.git", "branch" => "master", "localbranch" => "master"}
 nakamura = {"path" => "#{builddir}/nakamura", "repository" => "https://github.com/savithap/nakamura.git", "branch" => "master", "localbranch" => "master", "port" => "8080"}
 
-ui = {"path" => "#{builddir}/3akai-ux", "repository" => "https://github.com/savithap/3akai-ux.git", "branch" => "master", "localbranch" => "master"}
+ui = {"path" => "#{builddir}/3akai-ux", "repository" => "https://github.com/sakaiproject/3akai-ux.git", "branch" => "master", "localbranch" => "master"}
 fsresources = ["/dev", "/devwidgets", "/tests"]
 
 cle = {"path" => "#{builddir}/sakai-cle", "repository" => "https://source.sakaiproject.org/svn/sakai/branches/sakai-2.8.1", "port" => "8880", "ajp_port" => "8889" }
@@ -64,7 +64,7 @@ Mustache.template_path = "./templates"
 java_exec = "java"
 java_opts = "-Xms256m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=512m"
 java_debug_opts = "-Xdebug -Xrunjdwp:transport=dt_socket,address=8500,server=y,suspend=n"
-java_debug = false
+java_debug = true
 
 app_opts = ""
 
